@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Real market data (must not be committed)
+data/optionmetrics_spx.csv
+data/*.csv
+data/*.parquet
+data/*.h5
+data/*.hdf5
+data/*.pkl
+# Allow synthetic data subdirectory fixture files
+!data/synthetic/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Large result files (keep PNGs and summary CSVs but not huge raw CSVs)
+# Uncomment if raw result CSVs become large:
+# results/*.csv
